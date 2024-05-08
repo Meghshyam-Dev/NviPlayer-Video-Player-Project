@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NviPlayer</title>
+  <link href="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video-js.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="file-select">
+      <label for="upload">Select Video:</label>
+      <input type="file" id="upload" accept="video/*">
+    </div>
+    <div class="video-player-wrapper">
+      <video id="my-video" class="video-js" controls preload="auto" width="800" height="600">
+        <source src="" type="video/mp4">
+        <source src="" type="video/webm">
+      </video>
+      <div class="controls">
+        <button id="play-pause" class="control-btn">Play</button>
+        <button id="mute" class="control-btn">Mute</button>
+        <button id="fullscreen" class="control-btn">Fullscreen</button>
+        <select id="playback-size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
